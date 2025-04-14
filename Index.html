@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÉticaIA - Consultoría en Ética Aplicada a la Inteligencia Artificial</title>
+  <meta name="description" content="Servicios de consultoría en ética aplicada a la Inteligencia Artificial para todos los sectores económicos">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#inicio" class="logo text-2xl font-bold text-blue-600">Ética<span class="text-gray-700">IA</span></a>
+
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="#inicio" class="hover:text-blue-600 transition duration-300 px-2 py-1 rounded">Inicio</a></li>
+          <li><a href="#sectores" class="hover:text-blue-600 transition duration-300 px-2 py-1 rounded">Sectores</a></li>
+          <li><a href="#evaluacion" class="hover:text-blue-600 transition duration-300 px-2 py-1 rounded">Evaluación</a></li>
+          <li><a href="#servicios" class="hover:text-blue-600 transition duration-300 px-2 py-1 rounded">Servicios</a></li>
+          <li><a href="#contacto" class="hover:text-blue-600 transition duration-300 px-2 py-1 rounded">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <ul class="flex flex-col items-center py-4">
+        <li><a href="#inicio" class="block py-2 px-4 hover:bg-gray-100 w-full text-center mobile-link">Inicio</a></li>
+        <li><a href="#sectores" class="block py-2 px-4 hover:bg-gray-100 w-full text-center mobile-link">Sectores</a></li>
+        <li><a href="#evaluacion" class="block py-2 px-4 hover:bg-gray-100 w-full text-center mobile-link">Evaluación</a></li>
+        <li><a href="#servicios" class="block py-2 px-4 hover:bg-gray-100 w-full text-center mobile-link">Servicios</a></li>
+        <li><a href="#contacto" class="block py-2 px-4 hover:bg-gray-100 w-full text-center mobile-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 md:py-32">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Navegando el futuro ético de la Inteligencia Artificial</h1>
+        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Consultoría especializada en ética aplicada a la IA para todos los sectores económicos</p>
+        <a href="#sectores" class="bg-white text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg btn">Descubre nuestros servicios</a>
+      </div>
+    </section>
+
+    <section id="sectores" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Sectores Económicos</h2>
+                <p class="text-lg text-gray-600 mt-2">Selecciona tu sector para una evaluación personalizada de riesgos y oportunidades de IA</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="sector-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col" data-sector="primario">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-700">Sector Primario</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Actividades económicas relacionadas con la obtención de recursos directamente de la naturaleza: agricultura, ganadería, pesca, silvicultura y minería. La IA puede optimizar la producción, monitorear cultivos y predecir condiciones climáticas.</p>
+                    <button class="btn btn-outline mt-auto evaluate-sector-btn">Evaluar mi negocio</button>
+                </div>
+                <div class="sector-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col" data-sector="secundario">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-700">Sector Secundario</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Actividades que transforman materias primas en productos elaborados: manufactura, industria, construcción y energía. La IA puede mejorar procesos de producción, control de calidad y mantenimiento predictivo.</p>
+                    <button class="btn btn-outline mt-auto evaluate-sector-btn">Evaluar mi negocio</button>
+                </div>
+                <div class="sector-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col" data-sector="terciario">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-700">Sector Terciario</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Servicios y comercio: transporte, turismo, comercio, comunicaciones, finanzas y entretenimiento. La IA puede personalizar experiencias, optimizar logística y mejorar la atención al cliente.</p>
+                    <button class="btn btn-outline mt-auto evaluate-sector-btn">Evaluar mi negocio</button>
+                </div>
+                <div class="sector-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col" data-sector="cuaternario">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-700">Sector Cuaternario</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Actividades basadas en conocimiento e investigación: I+D, tecnologías de la información, consultoría y planificación. La IA puede acelerar la investigación, analizar grandes volúmenes de datos y generar nuevos conocimientos.</p>
+                    <button class="btn btn-outline mt-auto evaluate-sector-btn">Evaluar mi negocio</button>
+                </div>
+                <div class="sector-card bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col" data-sector="quinario">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-700">Sector Quinario</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Servicios de alto nivel y toma de decisiones: salud, educación, cultura, gobierno y organizaciones sin fines de lucro. La IA puede mejorar diagnósticos médicos, personalizar la educación y optimizar políticas públicas.</p>
+                    <button class="btn btn-outline mt-auto evaluate-sector-btn">Evaluar mi negocio</button>
+                </div>
+                 <div class="hidden lg:block"></div> </div>
+        </div>
+    </section>
+
+    <section id="evaluacion" class="py-16 md:py-24 bg-blue-50 hidden">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Evaluación de Riesgos y Oportunidades</h2>
+                <p class="text-lg text-gray-600 mt-2">Responde a las siguientes preguntas para evaluar el nivel de riesgo y oportunidad de la IA en tu negocio (<span id="current-question-number">1</span>/<span id="total-questions">6</span>)</p>
+                <p class="text-md text-gray-500 mt-1">Sector seleccionado: <span id="selected-sector-name" class="font-semibold">Ninguno</span></p>
+            </div>
+            <div class="questionnaire-container max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                </div>
+        </div>
+    </section>
+
+    <section id="resultados" class="py-16 md:py-24 bg-gray-100" style="display: none;"> <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Resultados de la Evaluación</h2>
+                <p class="text-lg text-gray-600 mt-2">Basado en tus respuestas, este es un resumen del perfil de riesgo y oportunidad.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="result-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-red-600">Nivel de Riesgo Ético Estimado</h3>
+                    <p class="text-gray-600 mb-4">Este indicador muestra el nivel de riesgo ético potencial según tus respuestas.</p>
+                    <div class="risk-meter">
+                        <div id="risk-level-bar" class="risk-level" style="width: 0%;"></div>
+                    </div>
+                    <div id="risk-level-label" class="text-center font-semibold text-lg">Calculando...</div>
+                </div>
+                 <div class="result-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-green-600">Nivel de Oportunidad Estimado</h3>
+                     <p class="text-gray-600 mb-4">Este indicador muestra el potencial de mejora e innovación con IA según tus respuestas.</p>
+                    <div class="risk-meter bg-green-200">
+                         <div id="opportunity-level-bar" class="risk-level bg-green-500" style="width: 0%;"></div>
+                    </div>
+                    <div id="opportunity-level-label" class="text-center font-semibold text-lg">Calculando...</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">Servicios Recomendados</h2>
+                <p class="text-lg text-gray-600 mb-8">Basado en tu perfil, te recomendamos considerar los siguientes servicios:</p>
+                <div id="recommended-services-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <p class="text-gray-500 md:col-span-2 lg:col-span-3">Calculando recomendaciones...</p>
+                </div>
+                 <a href="#contacto" class="btn btn-primary mt-12">Contacta para una consulta detallada</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Nuestros Servicios</h2>
+                <p class="text-lg text-gray-600 mt-2">Ofrecemos soluciones integrales para la implementación ética de la IA</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card flex flex-col bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Diagnóstico" alt="Imagen servicio diagnóstico" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Diagnóstico de Riesgos Éticos</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Evaluación exhaustiva de los riesgos éticos en su implementación de IA, con recomendaciones específicas.</p>
+                        <a href="#contacto" class="btn btn-outline mt-auto self-start">Solicitar información</a>
+                    </div>
+                </div>
+                <div class="service-card flex flex-col bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                     <img src="https://placehold.co/600x400/10b981/ffffff?text=Estrategias" alt="Imagen servicio estrategias" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Diseño de Estrategias Éticas</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Desarrollo de estrategias personalizadas para integrar principios éticos en todo el ciclo de vida de sus sistemas de IA.</p>
+                        <a href="#contacto" class="btn btn-outline mt-auto self-start">Solicitar información</a>
+                    </div>
+                </div>
+                <div class="service-card flex flex-col bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                     <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Análisis" alt="Imagen servicio análisis" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Análisis Ético de la IA</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Evaluación integral de sistemas de IA existentes o en desarrollo para identificar y abordar problemas éticos.</p>
+                        <a href="#contacto" class="btn btn-outline mt-auto self-start">Solicitar información</a>
+                    </div>
+                </div>
+                 <div class="service-card flex flex-col bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                     <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Capacitación" alt="Imagen servicio capacitación" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Capacitación en Ética para IA</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Programas de formación para su equipo sobre principios éticos en IA y su aplicación práctica.</p>
+                        <a href="#contacto" class="btn btn-outline mt-auto self-start">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 md:py-24 bg-gray-800 text-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Contacto</h2>
+                <p class="text-lg text-gray-400 mt-2">¿Interesado en nuestros servicios? Contáctanos para una consulta inicial gratuita.</p>
+            </div>
+            <div class="max-w-2xl mx-auto bg-white text-gray-800 p-8 rounded-lg shadow-xl">
+                <form id="contact-form"
+                      action="mailto:ssolucionesdeia@gmail.com"
+                      method="POST"
+                      enctype="text/plain">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                            <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                         <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+                            <input type="text" id="company" name="company" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="sector" class="block text-sm font-medium text-gray-700 mb-1">Sector económico</label>
+                            <select id="sector" name="sector" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                                <option value="">Selecciona un sector</option>
+                                <option value="primario">Sector Primario</option>
+                                <option value="secundario">Sector Secundario</option>
+                                <option value="terciario">Sector Terciario</option>
+                                <option value="cuaternario">Sector Cuaternario</option>
+                                <option value="quinario">Sector Quinario</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-8 py-3">Enviar mensaje</button>
+                    </div>
+                     </form>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div class="footer-col">
+                <a href="#inicio" class="logo text-2xl font-bold text-white mb-4 inline-block">Ética<span class="text-gray-400">IA</span></a>
+                <p class="text-sm mb-4">Consultoría especializada en ética aplicada a la Inteligencia Artificial para todos los sectores económicos.</p>
+                <div class="social-links flex space-x-4">
+                    <a href="https://www.linkedin.com/in/corvattaconsultor/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-white transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="https://www.instagram.com/soluciones_deia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="https://www.tiktok.com/@soluciones.de.ia" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:text-white transition duration-300"><i class="fab fa-tiktok text-xl"></i></a>
+                    <a href="#" aria-label="Twitter" class="hover:text-white transition duration-300"><i class="fab fa-twitter text-xl"></i></a> <a href="#" aria-label="Facebook" class="hover:text-white transition duration-300"><i class="fab fa-facebook text-xl"></i></a> </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="text-lg font-semibold text-white mb-4">Enlaces rápidos</h3>
+                <ul class="space-y-2">
+                    <li><a href="#inicio" class="hover:text-white transition duration-300">Inicio</a></li>
+                    <li><a href="#sectores" class="hover:text-white transition duration-300">Sectores</a></li>
+                    <li><a href="#evaluacion" class="hover:text-white transition duration-300">Evaluación</a></li>
+                    <li><a href="#servicios" class="hover:text-white transition duration-300">Servicios</a></li>
+                    <li><a href="#contacto" class="hover:text-white transition duration-300">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="text-lg font-semibold text-white mb-4">Servicios</h3>
+                 <ul class="space-y-2">
+                    <li><a href="#servicios" class="hover:text-white transition duration-300">Diagnóstico de Riesgos</a></li>
+                    <li><a href="#servicios" class="hover:text-white transition duration-300">Diseño de Estrategias</a></li>
+                    <li><a href="#servicios" class="hover:text-white transition duration-300">Análisis Ético IA</a></li>
+                    <li><a href="#servicios" class="hover:text-white transition duration-300">Capacitación</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="text-lg font-semibold text-white mb-4">Contacto</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-2"></i> ssolucionesdeia@gmail.com</li>
+                    <li class="flex items-start"><i class="fas fa-phone mt-1 mr-2"></i> 3108688648</li> <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-2"></i> Bogotá, Colombia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 text-center">
+            <p class="text-sm">&copy; <span id="current-year"></span> ÉticaIA. Todos los derechos reservados.</p>
+        </div>
+    </div>
+  </footer>
+
+  <div id="chat-widget" class="chat-container closed">
+      <div class="chat-header" id="chat-header">
+          <h3>Asistente ÉticaIA</h3>
+          <button class="chat-toggle" id="chat-toggle-btn" aria-label="Toggle chat">
+              <i class="fas fa-chevron-up"></i>
+          </button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+          <div class="message assistant">Hola! Soy tu asistente virtual de ÉticaIA. ¿Cómo puedo ayudarte hoy sobre ética en inteligencia artificial?</div>
+          </div>
+      <div class="chat-input">
+          <input type="text" id="chat-input-field" placeholder="Escribe tu mensaje...">
+          <button id="chat-send-btn" aria-label="Send message">
+              <i class="fas fa-paper-plane"></i>
+          </button>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
